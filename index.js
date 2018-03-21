@@ -77,6 +77,9 @@ const parseFile = (file, newLineAfterChar, maxLineLength) => {
 
     const result = splitedStringWithNewLines.join('');
 
+    fs.createReadStream(file).pipe(fs.createWriteStream(file + '.bak'));
+
+
     fs.writeFile(file, result, 'utf8', function (err) {
       if (err) {
         return console.log(err);
