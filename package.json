@@ -1,0 +1,38 @@
+{
+  "name": "scapegoat",
+  "version": "1.0.0",
+  "description": "A small library providing utility methods to escape and unescape HTML entities",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brentertz/scapegoat.git"
+  },
+  "keywords": [
+    "escape",
+    "unescape",
+    "html"
+  ],
+  "author": "Torsten Mirow <hello@netzhoerer.com> (http://netzhoerer.com/)",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/brentertz/scapegoat/issues"
+  },
+  "bin": {
+    "cssSplit": "./index.js"
+  },
+  "devDependencies": {
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.2"
+  },
+  "dependencies": {
+    "commander": "^2.15.0"
+  }
+}
